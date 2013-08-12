@@ -15,29 +15,37 @@ Afterwards, you'll have a CTRNN that's very skilled at controlling creature loco
 This work provides a simple, efficient implementation to be used in MAX, where the neural network I/O can be embedded as to a host of multimedia applications.
 
 
-Credits
--------
+
+### Building the MAX external
+
+To build, open up a Terminal window and run `javac` with the `-classpath` set to the location of your MAX5 or MAX6 installation. The full command is as follows. This will produce a number of .class files that Max6 will load whenever you open up a patch with this external. You have to ensure your search paths are setup correctly in MAX, so that it can find these .class files.
+
+```javac CTRNN.java MersenneTwisterFast.java CTRNNSettings.java CTRNNWrapper.java  -classpath /Applications/Max6/Cycling\ \'74/java/lib/max.jar ```
+
+### Dependencies
+
+You need to be comfortable patching in [MAX](http://cycling74.com/max). There's a bit of a learning curve, but the creative yield will be great!
+
+This code has been run on MacOS 10.5-10.7, with both Max5 and Max6.
+
+
+## Credits
+
 This work is largely influenced by: 
 
 * The biologically inspired Dynamical Systems research of [Dr. Randall Beer](http://mypage.iu.edu/~rdbeer/) 
 * The Live Algorithms research and MAX patches by [Dr. Ollie Bown](http://www.olliebown.com/main_blog/?p=73)
 
 
-Licence
--------
+## Licence
+
 CTRNN is Copyright © 2010-2011  &nbsp; [iroro orife](http://github.com/ruohoruotsi)
 
 Java source code and MAX patch are provided under the [MIT License](https://en.wikipedia.org/wiki/MIT_License)
 
-Dependencies
-------------
-You need to be comfortable patching in [MAX](http://cycling74.com/max). There's a bit of a learning curve, but the creative yield will be great!
 
 
-Version history
-------------
-Version 0.1
+### Version history
 
-#### Version 0.1 (August 11th, 2013):
+##### Version 0.1 (August 11th, 2013):
 Initial commit
-
