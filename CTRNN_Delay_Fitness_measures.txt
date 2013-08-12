@@ -1,0 +1,26 @@
+Trend
+Seasonality
+Serial Correlation
+Non-linearity
+Skewness
+Kurtosis
+Self-similarity
+Chaotic
+Periodicity (frequency)
+
+Cross correlation
+Coherence, 
+Mutual information
+Phase synchronization
+interdependence measures.
+
+Intermittency
+
+Absolute Error with Selection Range
+Absolute/Hits
+MSE (mean squared error)
+RMSE (root mean squared error)
+MAE (mean absolute error)
+RSE (relative squared error)
+RRSE (root relative squared error)
+RAE (relative absolute error)
